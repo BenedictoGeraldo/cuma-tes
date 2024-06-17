@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="booking-form">
+        <h2>Form Pemesanan Lapangan</h2>
+        <form action="process_booking.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="sport">Olahraga</label>
+            <select id="sport" name="sport" required>
+                <option value="Basket">Basket</option>
+                <option value="Futsal">Futsal</option>
+                <option value="Taekwondo">Taekwondo</option>
+                <option value="Tarung Derajat">Tarung Derajat</option>
+                <option value="Bulu Tangkis">Bulu Tangkis</option>
+                <option value="Voli">Voli</option>
+                <option value="Pencak Silat">Pencak Silat</option>
+                <option value="lainnya">Lainnya</option>
+            </select><br>
+            
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" required><br>
+            
+            <label for="time">Waktu:</label>
+            <input type="time" id="time" name="time" required><br>
+
+            <label for="keterangan">Keterangan:</label>
+            <textarea id="keterangan" name="keterangan" rows="4" cols="50"></textarea><br>
+
+            <button type="submit">Pesan</button>
+        </form>
+    </div>
+</body>
+</html>
